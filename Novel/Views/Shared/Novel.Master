@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" >
+    
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+    <link rel="stylesheet" rev="stylesheet" href="/style/style.css" type="text/css" media="all" />
+</head>
+
+<body>
+<div class="main m_top">
+<div class="fl"></div>
+<div class="fl"></div>
+<div class="fr"></div>
+</div>
+
+
+<div class="main m_center">
+    <div class="m_link">
+    <a href="<%=ConfigurationManager.AppSettings["WebsiteURl"]%>"><%=ConfigurationManager.AppSettings["WebsiteName"]%></a> &nbsp; | &nbsp; 
+    <a href="/sortid_1/">玄幻小说</a> &nbsp; | &nbsp; 
+    <a href="/sortid_5/">网游小说</a> &nbsp; | &nbsp; 
+    <a href="/sortid_2/">修真小说</a> &nbsp; | &nbsp; 
+    <a href="/sortid_3/">都市小说</a> &nbsp; | &nbsp; 
+    <a href="/sortid_4/">穿越小说</a> &nbsp; | &nbsp; 
+    <a href="/sortid_6/">科幻小说</a> &nbsp; | &nbsp; 
+    <a href="/sortid_7/">美文同人</a> &nbsp; | &nbsp; 
+    <a href="/sortid_8/">其他小说</a>
+    </div>
+</div>
+<div class="main m_center">
+    <a href="/topgoodnum/">总收藏榜</a> &nbsp; | &nbsp; 
+    <a href="/topallvisit/">总排行榜</a> &nbsp; | &nbsp; 
+    <a href="/topallvote/">总推荐榜</a> &nbsp; | &nbsp; 
+    <a href="/topmonthvisit/">月排行榜</a> &nbsp; | &nbsp; 
+    <a href="/topmonthvote/">月推荐榜</a> &nbsp; | &nbsp; 
+    <a href="/topweekvisit/">周排行榜</a> &nbsp; | &nbsp; 
+    <a href="/topweekvote/">周推荐榜</a> &nbsp; | &nbsp; 
+    <a href="/toppostdate/">最新入库</a> &nbsp; | &nbsp; 
+    <a href="/toplastupdate/">最近更新</a> &nbsp; | &nbsp; 
+    <a href="/topsize/">字数排行</a> &nbsp; 
+    <div style="clear: both;"></div>
+</div>
+
+
+<div class="main m_center">
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+</div>
+
+
+
+<div class="main" id="centerl">
+
+<div style="clear:both;"></div>
+</div>
+
+<div class="main m_bot"></div>
+
+<div class="main m_foot">
+
+如本站中的部分信息无意中侵犯到您的权益，或是含有非法内容，请及时与我们联系，我们将在第一时间做出回应！谢谢！<br />
+本站所有小说的版权为原作者所有！仅代表发布者个人行为，与本站立场无关！<br />
+</div>
+</body>
+</html>

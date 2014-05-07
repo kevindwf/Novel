@@ -1,0 +1,293 @@
+﻿body
+{
+    background-color: #E7F4FE;
+    font-family: "宋体" ,Verdana,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin: auto;
+}
+html
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.tddh, #link a, #link a:hover
+{
+    background: url("images/tupian.gif") no-repeat;
+}
+input
+{
+    background-color: #f1f8ff;
+    border: 1px solid #999999;
+    color: #333333;
+    font-family: Tahoma,Arial,Helvetica;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+textarea
+{
+    background: #ffffff;
+    border: #999999 1px solid;
+    color: #000000;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    left: -2px;
+}
+a:link
+{
+    color: #004D00;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #004D00;
+    text-decoration: none;
+}
+a:active
+{
+    color: #FF6600;
+    text-decoration: none;
+}
+hr
+{
+    color: #cccccc;
+    width: 100%;
+}
+#header
+{
+    width: 100%;
+}
+#header #menu
+{
+    height: 22px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+.tddh
+{
+    background-position: -789px -23px;
+    text-align: center;
+    width: 85px;
+    height: 22px;
+}
+#header #mainbav
+{
+    background-color: #d1dbef;
+    height: 33px;
+    width: 100%;
+}
+#header #mainbav #leftsidebar
+{
+    float: left;
+    margin-top: 8px;
+    text-align: left;
+    width: 33%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#header #mainbav #rightsidebar
+{
+    float: right;
+    margin-top: 8px;
+    text-align: right;
+    width: 65%;
+}
+#title
+{
+    margin: auto;
+    padding: 5px;
+    width: 96%;
+}
+#title h1
+{
+    font-size: 25px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 120%;
+}
+#content #msg
+{
+    line-height: 150%;
+    margin: auto;
+    margin-top: 5px !important;
+    padding-top: 5px;
+    width: 100%;
+}
+#list
+{
+    margin: 10px auto;
+    width: 774px;
+}
+#list dl
+{
+    background: #CFDFF1;
+    border: 1px solid #81b6ff;
+    float: left;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+}
+#list dt
+{
+    background: #fff;
+    border: 1px solid #9FBFE2;
+    display: inline;
+    float: left;
+    line-height: 30px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    width: 761px;
+}
+#list dd
+{
+    background: #E7F4FE;
+    border: 1px solid #9FBFE2;
+    display: inline;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: 10px;
+    vertical-align: middle;
+    width: 249px;
+}
+#list dd A:link
+{
+    color: #178102;
+    text-decoration: none;
+}
+#list dd A:visited
+{
+    color: #444444;
+    text-decoration: none;
+    text-decoration: underline;
+}
+#content, .chaptercontent
+{
+    font-size: 19pt;
+    line-height: 150%;
+    margin: 0px auto;
+    padding: 5px 1px;
+    text-align: left;
+    width: 905px;
+}
+.chaptertitle
+{
+    border-bottom: 1px solid #525152;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 150%;
+    margin: 0px auto;
+    width: 777px;
+}
+.divimage
+{
+    text-align: center;
+}
+.imagecontent
+{
+    text-align: center;
+}
+.aimage
+{
+    cursor: pointer;
+}
+#tips
+{
+    color: #999;
+    line-height: 150%;
+    text-align: center;
+    width: 100%;
+}
+.gxg
+{
+    margin: 1px auto;
+    text-align: center;
+    width: 740px;
+}
+#link
+{
+    width: 714px;
+    margin: 10px auto;
+    overflow: auto;
+    text-align: center;
+}
+#link a
+{
+    margin: auto 25px auto auto;
+    display: inline;
+    float: left;
+    width: 72px;
+    height: 19px;
+    text-align: center;
+    padding-top: 5px;
+    background-position: -790px -73px;
+    color: #333;
+}
+#link a:hover
+{
+    margin: auto 25px auto auto;
+    display: inline;
+    float: left;
+    width: 72px;
+    height: 20px;
+    text-align: center;
+    padding-top: 5px;
+    background-position: -790px -48px;
+    color: #333;
+}
+#copyright
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    font-size: 10pt;
+}
+.gonggao
+{
+    border-bottom: 1px solid #CACACA;
+    line-height: 150%;
+    width: 710px;
+    text-align: center;
+    margin: 5px auto;
+}
+#TextSelect
+{
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.ts1
+{
+    display: inline;
+    float: right;
+}
+.ts4
+{
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
+.g0g
+{
+    width: 760px;
+    text-align: center;
+    margin: 1px auto;
+}
+.ts2, .ts3
+{
+    display: inline;
+    float: right;
+}
