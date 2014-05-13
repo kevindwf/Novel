@@ -67,7 +67,7 @@ namespace Data.CapturedData
                         {
                             NovelName = match.Groups[1].Value,
                             NovelAuthor = match.Groups[2].Value,
-                            NovelType = match.Groups[3].Value,
+                            NovelCategory = new NovelCategoryInfo(match.Groups[3].Value),
                         },
                         ChapterUrl = match.Groups[4].Value,
                         ChapterName = match.Groups[5].Value,

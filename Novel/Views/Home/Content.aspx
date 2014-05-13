@@ -5,10 +5,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title><%=content.ChapterName %> / <%=content.Novel.NovelType %><%=content.Novel.NovelName %></title>
+<title><%=content.ChapterName %> / <%=content.Novel.NovelCategory.CategoryName %><%=content.Novel.NovelName %></title>
 <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
 <meta name="keywords" content="<%=content.ChapterName %>,<%=content.Novel.NovelName %>" />
-<meta name="description" content="<%=content.Novel.NovelType %><%=content.Novel.NovelName %>最新章节<%=content.ChapterName %>免费在线阅读，<%=ConfigurationManager.AppSettings["WebsiteName"]%>无讨厌的弹窗广告。" />
+<meta name="description" content="<%=content.Novel.NovelCategory.CategoryName %><%=content.Novel.NovelName %>最新章节<%=content.ChapterName %>免费在线阅读，<%=ConfigurationManager.AppSettings["WebsiteName"]%>无讨厌的弹窗广告。" />
 <link href="/style/c.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/style/c.js"></script>
 </head>
@@ -19,7 +19,7 @@
 <td class="tddh"><a href="<%=content.NextChapterUrl %>">下一章</a></td>
 
 </tr></tbody></table></div>
-<div id="mainbav"><div id="leftsidebar">&nbsp;&nbsp;<a href="http://www.cxzww.com/"><%=ConfigurationManager.AppSettings["WebsiteName"]%></a>&nbsp;&raquo;&nbsp;<a href="<%=content.Novel.NovelTypeUrl %>"><%=content.Novel.NovelType %></a>&nbsp;&raquo;&nbsp;<a href="<%=content.Novel.NovelUrl %>"><%=content.Novel.NovelName %></a>&nbsp;&raquo;&nbsp;<%=content.ChapterName %></div>
+<div id="mainbav"><div id="leftsidebar">&nbsp;&nbsp;<a href="http://www.cxzww.com/"><%=ConfigurationManager.AppSettings["WebsiteName"]%></a>&nbsp;&raquo;&nbsp;<a href="<%=content.Novel.NovelCategory.CategoryUrl %>"><%=content.Novel.NovelCategory.CategoryName %></a>&nbsp;&raquo;&nbsp;<a href="<%=content.Novel.NovelUrl %>"><%=content.Novel.NovelName %></a>&nbsp;&raquo;&nbsp;<%=content.ChapterName %></div>
 <div id="rightsidebar"></div></div></div>
 <h1><%=content.ChapterName %></h1>
 <div id="content">

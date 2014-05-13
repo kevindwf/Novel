@@ -9,7 +9,7 @@ using Data.CapturedData;
 namespace Novel.Controllers
 {
     [HandleError]
-    public class HomeController : Controller
+    public class HomeController : BaseNovelController
     {
         public ActionResult Index()
         {
@@ -26,9 +26,19 @@ namespace Novel.Controllers
             return View();
         }
 
-        public ActionResult NovelList(int category, int index=1)
+        public ActionResult NovelList(string category, int index=1)
         {
-            string url = string.Format("http://www.cxzww.com/sortid_{0}/{1}/", category, index);
+            Category categoryDB = new Category();
+            int categoryId = categoryDB.GetCategoryIdByUrl(category);
+            string url;
+            if (index == 1)
+            {
+                url = string.Format("http://www.cxzww.com/sortid_{0}/", categoryId);
+            }
+            else
+            {
+                url = string.Format("http://www.cxzww.com/sortid_{0}/{1}/", categoryId, index);
+            }
             NovelList novelList = new NovelList(url);
 
             ViewData["NovelList"] = novelList.GetNovelList();

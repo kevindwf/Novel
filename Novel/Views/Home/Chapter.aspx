@@ -8,7 +8,7 @@
 <title><% =chapterInfo.Novel.NovelName%>无弹窗_<% =chapterInfo.Novel.NovelName%>全文阅读_<%=ConfigurationManager.AppSettings["WebsiteName"]%></title>
 <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
 <meta name="keywords" content="<% =chapterInfo.Novel.NovelName%>" />
-<meta name="description" content="<% =chapterInfo.Novel.NovelName%>全文作者是<% =chapterInfo.Novel.NovelAuthor%>，<%=ConfigurationManager.AppSettings["WebsiteName"]%>免费提供在线<% =chapterInfo.Novel.NovelType%><% =chapterInfo.Novel.NovelName%>全文阅读，在这里<% =chapterInfo.Novel.NovelName%>无弹窗阅读更畅快。" />
+<meta name="description" content="<% =chapterInfo.Novel.NovelName%>全文作者是<% =chapterInfo.Novel.NovelAuthor%>，<%=ConfigurationManager.AppSettings["WebsiteName"]%>免费提供在线<% =chapterInfo.Novel.NovelCategory.CategoryName%><% =chapterInfo.Novel.NovelName%>全文阅读，在这里<% =chapterInfo.Novel.NovelName%>无弹窗阅读更畅快。" />
 <link href="/style/c.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/style/c.js"></script>
 </head>
@@ -19,10 +19,10 @@
 <td class="tddh"><a href="<% =chapterInfo.Novel.NovelUrl%>">返回书页</a></td>
 </tr></tbody></table></div>
 <div id="mainbav">	 
-<div id="leftsidebar">&nbsp;&nbsp;<a href="<%=ConfigurationManager.AppSettings["WebsiteUrl"]%>"><%=ConfigurationManager.AppSettings["WebsiteName"]%></a>&nbsp;&raquo;&nbsp;<a href="<% =chapterInfo.Novel.NovelTypeUrl%>"><% =chapterInfo.Novel.NovelType%></a>&nbsp;&raquo;&nbsp;<% =chapterInfo.Novel.NovelName%>全文阅读</div>
+<div id="leftsidebar">&nbsp;&nbsp;<a href="<%=ConfigurationManager.AppSettings["WebsiteUrl"]%>"><%=ConfigurationManager.AppSettings["WebsiteName"]%></a>&nbsp;&raquo;&nbsp;<a href="<% =chapterInfo.Novel.NovelCategory.CategoryUrl%>"><% =chapterInfo.Novel.NovelCategory.CategoryName%></a>&nbsp;&raquo;&nbsp;<% =chapterInfo.Novel.NovelName%>全文阅读</div>
 </div></div>
 <div id="title"><h1><% =chapterInfo.Novel.NovelName%></h1></div>
-<div id="msg">作者：<% =chapterInfo.Novel.NovelAuthor%> | 类型：<% =chapterInfo.Novel.NovelType%> | 最新：<a href="<% =chapterInfo.ChapterUrl%>"><% =chapterInfo.ChapterName%></a></div>
+<div id="msg">作者：<% =chapterInfo.Novel.NovelAuthor%> | 类型：<% =chapterInfo.Novel.NovelCategory.CategoryName%> | 最新：<a href="<% =chapterInfo.ChapterUrl%>"><% =chapterInfo.ChapterName%></a></div>
 <div id="list">
 <dl>
 

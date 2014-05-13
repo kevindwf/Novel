@@ -46,7 +46,7 @@
     <a href="<%=item.NovelUrl %>" target="_blank" class="imga">
         <img src="<%=item.NovelImage %>" border="0" width="100" height="125" alt="<%=item.NovelName %>">
     </a> 
-    <p class="name"> <a href="<%=item.NovelUrl %>" target="_blank">《吞噬苍穹》</a><p> 
+    <p class="name"> <a href="<%=item.NovelUrl %>" target="_blank">《<%=item.NovelName %>》</a><p> 
     <em><%=item.NovelDesc %></em> 
 </li>
 <%} %>
@@ -61,7 +61,7 @@
 <div class="blockcontent"><ul class="ulmul" style="width:100%">
 <%foreach (var item in (List<Model.ChapterInfo>)ViewData["LatestChapters"])
   { %>
-<li class="fl lm" style="width:70%;">[<%=item.Novel.NovelType %>] 《
+<li class="fl lm" style="width:70%;">[<%=item.Novel.NovelCategory.CategoryName %>] 《
     <a class="poptext" href="<%=item.Novel.NovelUrl %>" target="_blank"><%=item.Novel.NovelName %></a>》 
     <a href="<%=item.ChapterUrl %>" target="_blank"><%=item.ChapterName %></a>
 </li>

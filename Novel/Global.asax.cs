@@ -17,9 +17,10 @@ namespace Novel
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
 
-            routes.MapRoute("NovelList",
-                "List/{category}/{index}",
-                new { controller = "Home", action = "NovelList" }
+            routes.MapRoute("Category",
+                "{category}/{index}",
+                new { controller = "Home", action = "NovelList", index=UrlParameter.Optional },
+                new { category= @"(\w)+"}
                 );
 
             routes.MapRoute("Chapter",

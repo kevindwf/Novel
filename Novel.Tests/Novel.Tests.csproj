@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IdMappingTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
     <Compile Include="Controllers\AccountControllerTest.cs" />
@@ -62,6 +63,10 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{A65A6F6F-0870-45A9-A553-502D81EE8CCD}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Novel\Novel.csproj">
       <Project>{F3D8CEAF-4337-48B3-AF7C-FFB6DB98B5FE}</Project>
       <Name>Novel</Name>

@@ -31,7 +31,7 @@ namespace Data.CapturedData
             var hiarachyMatches = hiarachyRegex.Matches(_html);
             if (hiarachyMatches.Count > 0)
             {
-                chapter.Novel.NovelType = hiarachyMatches[0].Groups[2].Value;
+                chapter.Novel.NovelCategory = new NovelCategoryInfo(hiarachyMatches[0].Groups[2].Value);
                 chapter.Novel.NovelUrl = hiarachyMatches[0].Groups[3].Value;
                 chapter.Novel.NovelName = hiarachyMatches[0].Groups[4].Value;
                 chapter.ChapterName = hiarachyMatches[0].Groups[5].Value;

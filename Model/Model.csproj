@@ -45,6 +45,7 @@
     <Compile Include="DBEntity\ChapterContentDBEntity.cs" />
     <Compile Include="DBEntity\ChapterDBEntity.cs" />
     <Compile Include="DBEntity\NovelDBEntity.cs" />
+    <Compile Include="NovelCategoryInfo.cs" />
     <Compile Include="NovelInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

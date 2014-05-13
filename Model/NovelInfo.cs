@@ -11,9 +11,7 @@ namespace Model
 
         public string NovelName { get; set; }
 
-        public string NovelType { get; set; }
-
-        public string NovelTypeUrl { get; set; }
+        public NovelCategoryInfo NovelCategory { get; set; }
 
         public string NovelUrl { get; set; }
 
