@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Data.CapturedData
+namespace Model
 {
     public static class IdMappingHelper
     {

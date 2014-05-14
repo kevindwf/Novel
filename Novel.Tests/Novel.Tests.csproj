@@ -67,6 +67,10 @@
       <Project>{A65A6F6F-0870-45A9-A553-502D81EE8CCD}</Project>
       <Name>Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{B23CA654-5A97-4E5B-82DB-84EA6DBB1C9E}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Novel\Novel.csproj">
       <Project>{F3D8CEAF-4337-48B3-AF7C-FFB6DB98B5FE}</Project>
       <Name>Novel</Name>

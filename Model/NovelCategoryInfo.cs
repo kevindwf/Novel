@@ -12,7 +12,7 @@ namespace Model
                                                                                         {
                                                                                             new Tuple<int, string, string>(8, "其他小说","others"),
                                                                                             new Tuple<int, string, string>(1, "玄幻小说","xuanhuan"),
-                                                                                            new Tuple<int, string, string>(2, "修真小说","xiuzheng"),
+                                                                                            new Tuple<int, string, string>(2, "修真小说","xiuzhen"),
                                                                                             new Tuple<int, string, string>(3, "都市小说","doushi"),
                                                                                             new Tuple<int, string, string>(4, "穿越小说","chuanyue"),
                                                                                             new Tuple<int, string, string>(5, "网游小说","wangyou"),

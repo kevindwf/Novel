@@ -16,6 +16,11 @@ namespace Novel
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapRoute("Chapter",
+                "Novel/{chapterId}",
+                new { controller = "Home", action = "Chapter" },
+                new { chapterId = @"(\d)+" }
+                );
 
             routes.MapRoute("Category",
                 "{category}/{index}",
@@ -23,14 +28,11 @@ namespace Novel
                 new { category= @"(\w)+"}
                 );
 
-            routes.MapRoute("Chapter",
-                "Chapter/{chapterId}",
-                new { controller = "Home", action = "Chapter" }
-                );
-
             routes.MapRoute("Content",
                 "Content/{chapterId}/{contentId}",
-                new { controller = "Home", action = "Content" }
+                new { controller = "Home", action = "Content" },
+                new { chapterId = @"(\d)+", contentId = @"(\d)+" }
+
                 );
 
             routes.MapRoute(

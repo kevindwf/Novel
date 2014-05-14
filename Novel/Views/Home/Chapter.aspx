@@ -16,7 +16,7 @@
 <div id="header">
 <div id="menu"><table width="100%"><tbody><tr>
 <td align="left" height="23">&nbsp;&nbsp;<% =chapterInfo.Novel.NovelName%>&bull;<% =chapterInfo.Novel.NovelAuthor%></td>
-<td class="tddh"><a href="<% =chapterInfo.Novel.NovelUrl%>">返回书页</a></td>
+<td class="tddh"><a href="<%--<% =chapterInfo.Novel.NovelUrl%>--%>">返回书页</a></td>
 </tr></tbody></table></div>
 <div id="mainbav">	 
 <div id="leftsidebar">&nbsp;&nbsp;<a href="<%=ConfigurationManager.AppSettings["WebsiteUrl"]%>"><%=ConfigurationManager.AppSettings["WebsiteName"]%></a>&nbsp;&raquo;&nbsp;<a href="<% =chapterInfo.Novel.NovelCategory.CategoryUrl%>"><% =chapterInfo.Novel.NovelCategory.CategoryName%></a>&nbsp;&raquo;&nbsp;<% =chapterInfo.Novel.NovelName%>全文阅读</div>

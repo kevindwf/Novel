@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Data.CapturedData;
+using Model;
 
 
 namespace Novel.Controllers
@@ -48,7 +49,9 @@ namespace Novel.Controllers
 
         public ActionResult Chapter(int chapterId)
         {
-            string url = string.Format("http://www.cxzww.com/shtml/{0}/{1}/", chapterId.ToString().Substring(0, 2), chapterId);
+            chapterId = IdMappingHelper.DecodeId(chapterId);
+
+            string url = string.Format("http://www.cxzww.com/shtml/{0}/{1}/", GetNovelPrefix(chapterId), chapterId);
             Chapter chapter = new Chapter(url);
 
             ViewData["Chapters"] = chapter.GetChapters();
@@ -59,7 +62,9 @@ namespace Novel.Controllers
 
         public ActionResult Content(int chapterId, int contentId)
         {
-            string url = string.Format("http://www.cxzww.com/shtml/{0}/{1}/{2}.html", chapterId.ToString().Substring(0, 2), chapterId, contentId);
+            chapterId = IdMappingHelper.DecodeId(chapterId);
+            contentId = IdMappingHelper.DecodeId(contentId);
+            string url = string.Format("http://www.cxzww.com/shtml/{0}/{1}/{2}.html", GetNovelPrefix(chapterId), chapterId, contentId);
             Content content = new Content(url);
 
             ViewData["Content"] = content.GetNovelContent();
@@ -67,6 +72,16 @@ namespace Novel.Controllers
             return View();
         }
 
-        
+        private string GetNovelPrefix(int chapterId)
+        {
+            //http://www.cxzww.com/shtml/0/291/
+            if (chapterId < 1000)
+            {
+                return "0";
+            }
+
+            //http://www.cxzww.com/shtml/64/64458/
+            return chapterId.ToString().Substring(0, 2);
+        }
     }
 }

@@ -47,7 +47,6 @@
     <Compile Include="CapturedData\Chapter.cs" />
     <Compile Include="CapturedData\Content.cs" />
     <Compile Include="CapturedData\HttpWebRequestHelper.cs" />
-    <Compile Include="CapturedData\IdMappingHelper.cs" />
     <Compile Include="CapturedData\Index.cs" />
     <Compile Include="CapturedData\NovelList.cs" />
     <Compile Include="DbHelper.cs" />
